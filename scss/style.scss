@@ -1,0 +1,638 @@
+@use 'fonts';
+@use 'default';
+
+
+.container {
+    max-width: 114.1rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn {
+    font-family: 'Roboto';
+    border-radius: 2.5rem;
+    padding: 1.5rem 3.5rem;
+    color: #fff;
+    background-color: #ff7340;
+
+    &:hover {
+        background-color: #ec5a25;
+    }
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1000;
+    width: 100%;
+    transform: translate(-50%, 0);
+    padding: 2.2rem 0;
+    background-color: rgba(0, 0, 0, .05);
+
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        padding-left: 3rem;
+    }
+
+    &__nav a {
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #2f3c4d;
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+    }
+
+    &__button {
+        font-weight: 500;
+        font-size: 2rem;
+        text-transform: uppercase;
+        background-color: #ff7340;
+        margin-left: 16rem;
+    }
+}
+
+.main-display {
+    padding: 22.2rem 2rem 10.3rem;
+
+
+    &__header {
+        font-size: 6.4rem;
+        font-weight: 700;
+        color: #2f3c4d;
+
+        span {
+            text-transform: uppercase;
+            color: #ff7340;
+            font-weight: 900;
+        }
+    }
+
+
+
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: rgb(47, 60, 77);
+        line-height: 1.389;
+        max-width: 51rem;
+    }
+
+    &__button {
+        font-size: 2.4rem;
+        font-weight: 400;
+        padding: 1.5rem 2.5rem;
+    }
+
+    &__bg {
+        background-color: rgb(255, 115, 64);
+        background-image: url(../img/first.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 82.4rem;
+        height: 61.5rem;
+        z-index: 137;
+        border-radius: 0 0 0 10rem;
+    }
+}
+
+.adventures {
+    padding-top: 19.4rem;
+    padding-bottom: 14rem;
+
+    &__title {
+        font-size: 9.4rem;
+        font-weight: 900;
+        font-family: "Roboto";
+        color: rgba(183, 183, 183, 0.502);
+        text-transform: uppercase;
+        line-height: 1.2;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: -7.7rem;
+        z-index: -10;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__item {
+        background-color: #ff7340;
+        border-radius: 1rem;
+        width: 36rem;
+        height: 24rem;
+        color: #fff;
+        box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.2) inset;
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    &__header {
+        font-size: 2.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: center;
+        margin-top: .8rem;
+    }
+
+}
+
+.camp {
+    background-image: url(../img/camping.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hik {
+    background-image: url(../img/hiking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scuba {
+    background-image: url(../img/scuba\ diving.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center 0;
+
+}
+
+
+.discount {
+    background-color: #ff7340;
+    background-image: url(../img/discount.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    box-shadow: 0 0 0 228px rgba(0, 0, 0, 0.2) inset;
+
+
+    &__header {
+        font-size: 4.8rem;
+        font-weight: 900;
+        line-height: 1.2;
+        color: #fff;
+
+        span {
+            font-size: 5.8rem;
+            text-transform: uppercase;
+            border-bottom: 3px solid #fff;
+        }
+    }
+
+
+    &__form {
+        position: relative;
+        max-width: 50rem;
+        border: .1rem solid #fff;
+        border-radius: .2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+
+        input {
+            width: 100%;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #fff;
+            line-height: 1.2;
+            background-color: transparent;
+            padding: 1.5rem;
+        }
+    }
+
+
+    &__button {
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        right: 1rem;
+        padding: .6rem 2.5rem .4rem;
+        background-color: rgba(255, 115, 64, 0.6);
+        color: #fff;
+        border-radius: .2rem;
+        z-index: 100;
+
+        &:hover {
+            background-color: rgba(255, 115, 64, 1);
+        }
+    }
+
+
+}
+
+input::-moz-placeholder {
+    color: #fff;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+
+.gallery {
+    padding-top: 19.8rem;
+    position: relative;
+
+
+    &__title {
+        top: 12.1rem
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: no-wrap;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        &:last-child .gallery__photo,
+        &:first-child .gallery__photo {
+            background-color: #ebbead;
+        }
+
+    }
+
+    &__photo {
+        width: 36rem;
+        height: 24rem;
+        border-radius: 1rem;
+        background-color: #ff7340;
+
+        &:first-child {
+            margin-bottom: 3rem;
+        }
+    }
+
+}
+
+.team {
+    padding-top: 19rem;
+    position: relative;
+
+
+    &__title {
+        font-size: 7.2rem;
+        font-weight: 900;
+        color: rgb(47, 60, 77);
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+
+    &__txt {
+        max-width: 55rem;
+        font-size: 1.2rem;
+        color: rgb(130, 130, 130);
+        line-height: 2;
+        margin-bottom: 4.2rem;
+    }
+
+    &__button {
+        padding: 1rem 5rem;
+    }
+
+    &__photos {
+        position: absolute;
+        display: flex;
+        top: 12rem;
+        right: -1rem;
+        z-index: -1;
+    }
+
+    &__photo {
+        width: 26.2rem;
+        height: 39rem;
+        background-color: #ff7340;
+        border-radius: 1rem;
+
+        &:not(:last-child) {
+            margin-right: 3.1rem;
+        }
+    }
+
+}
+
+.sponsors {
+    margin: 15.3rem 1rem 10rem;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 20rem;
+        height: 10rem;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+    }
+
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding-top: 2.9rem;
+    padding-bottom: 2.5rem;
+
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: rgb(47, 60, 77);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+.icons__item {
+    width: 3.8rem;
+    height: 3.8rem;
+    background-color: #2f3c4d;
+    border-radius: 1rem;
+
+    &:not(:last-child) {
+        margin-right: 1.9rem;
+    }
+}
+
+
+.inst {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+
+    img {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin: 0 auto;
+        align-self: center;
+    }
+}
+
+
+
+
+
+@media (max-width: 1600px) {
+    .main-display__bg {
+        width: 50%;
+        background-position: center;
+
+    }
+
+    .team {
+        &__photos {
+            position: initial;
+            max-width: 120rem;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 5rem auto;
+        }
+
+        &__photo:not(:last-child) {
+            margin-right: .75rem;
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .header {
+        &__button {
+            margin-left: 10rem;
+            font-size: 1.7rem;
+        }
+
+        &__nav a {
+            font-size: 1.7rem;
+        }
+    }
+
+
+
+    .main-display {
+        &__header {
+            font-size: 5.4rem;
+        }
+
+        &__text {
+            max-width: 50%;
+
+        }
+    }
+
+    .adventures {
+        padding-top: 21.6rem;
+        padding-bottom: 10rem;
+
+        &__wrap {
+            justify-content: space-around;
+        }
+
+        &__item {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .sponsors {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            margin-top: 2rem;
+
+            &:not(:last-child) {
+                margin-right: 5rem;
+
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 856px) {
+    .header__button {
+        margin-left: 5rem;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    .team__photo {
+        margin-top: 3rem;
+    }
+
+
+}
+
+@media (max-width: 786px) {
+
+    .header__menu {
+        display: none;
+    }
+
+
+    .main-display {
+        padding-top: 15rem;
+
+        &__bg {
+            display: none;
+        }
+
+        &__header {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        &__button {
+            margin-left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    .adventures {
+        padding-top: 15rem;
+        padding-bottom: 6rem;
+
+        &__title {
+            font-size: 8rem;
+            top: -6.7rem;
+        }
+    }
+
+
+    .discount {
+        padding: 5rem 0;
+
+        &__header {
+            font-size: 3.8rem;
+
+            span {
+                font-size: 4.8rem;
+            }
+        }
+    }
+
+    .gallery__title {
+        top: 13.1rem;
+    }
+
+    .sponsors__wrap {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 524px) {
+    .header {
+        padding: 1.2rem 0;
+    }
+
+    .main-display {
+        padding: 15rem 0 5rem;
+
+        &__header {
+            font-size: 4.4rem;
+
+        }
+
+        &__button {
+            font-size: 1.8rem;
+        }
+    }
+
+    .adventures {
+        &__title {
+            font-size: 5.5rem;
+            top: -4.7rem;
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+
+    .discount {
+        &__form input {
+            font-size: 1.4rem;
+        }
+
+        &__button {
+            font-size: 1.2rem;
+            padding: 0.6rem 1rem 0.4rem;
+        }
+    }
+
+    .gallery__title {
+        top: 15.3rem;
+    }
+
+    .sponsors__item:not(:last-child) {
+        margin-right: 0;
+
+    }
+
+}
