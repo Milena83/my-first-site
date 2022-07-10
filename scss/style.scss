@@ -293,7 +293,7 @@ input::-webkit-input-placeholder {
 
         &:last-child .gallery__photo,
         &:first-child .gallery__photo {
-            background-color: #ebbead;
+            box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.2) inset;
         }
 
     }
