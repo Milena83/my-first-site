@@ -182,7 +182,7 @@
 }
 
 .scuba {
-    background-image: url(../img/scuba\ diving.jpg);
+    background-image: url(../img/scubaDiving.jpg);
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: center 0;
@@ -293,7 +293,7 @@ input::-webkit-input-placeholder {
 
         &:last-child .gallery__photo,
         &:first-child .gallery__photo {
-            box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.2) inset;
+            box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.5) inset;
         }
 
     }
@@ -341,7 +341,7 @@ input::-webkit-input-placeholder {
         position: absolute;
         display: flex;
         top: 12rem;
-        right: -1rem;
+        right: 0rem;
         z-index: -1;
     }
 
